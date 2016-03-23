@@ -6,10 +6,8 @@ ruby '2.2.3'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 # move #gem 'sqlite3'
-gem 'sqlite3'
 #add
 # move #gem 'pry'
-gem 'pry'
 #add
 gem 'bootstrap-sass'
 # Use SCSS for stylesheets
@@ -55,9 +53,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
 #add
-# group :production do
-#  gem 'pg'
-#  gem 'rails_12factor'
-# end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
