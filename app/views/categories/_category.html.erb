@@ -1,0 +1,14 @@
+<!--views/categories/_category.html.erb-->
+<% if category.name == 'Category1' %>
+  <span class='badge alert-danger'>
+<% elsif category.name == 'Category2' %>
+  <span class='badge alert-success'>
+<% elsif category.name == 'Category3' %>
+  <span class='badge alert-info'>
+<% elsif category.name == 'Category4' %>
+  <span class='badge alert-warning'>
+<% elsif category.name == 'Category5' %>
+  <span class='badge progress-bar-info'>
+<% end %>
+  <%= link_to category.name, categories_path %>
+</span>
